@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /*change the box model so they are not added to the
+    total width/height that we specify for a box */
+    box-sizing: inherit;
+}
+
+html {
+    /* simplify the rem units, making it from 16 px to 10px but
+    but not hard setting it to the browser so users can zoom
+    in */
+        font-size: 62.5%;
+    }
+
+
+body {
+    box-sizing: border-box;
+}
